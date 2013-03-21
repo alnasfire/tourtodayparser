@@ -3,37 +3,49 @@ root {
 }
 
 .leftmenu{
-    height: 240%;
+    height: 100%;
     width: 20%;
-    float: left; 
+    float: left;
+    /*background-color: blue;*/
+    padding-left: 100px;
 }
 
-.main{}
+.main{
+       
+}
+
+.menu{
+    float: right;
+    padding-top: 200px;
+    border: transparent;    
+}
 
 .content{
     height: 50%;
-    width: 80%;
-    min-height: 750px;
-    background-image: url('/tourtoday/images/osnova.png');
+    width: 100%;
+    min-height: 950px;
+    background-image: url('/tourtoday/images/osnova3.png');
     background-repeat: no-repeat;
     background-position: center;          
+    /*background-color: yellow;*/     
     float: left;
 }
 
 .underground{
     height: 20%;
-    width: 70%;    
-    float: right;
+    width: 100%;    
+    float: left;
     background-image: url('/tourtoday/images/podval.png');
     background-repeat: no-repeat;
-    background-position: center;            
+    background-position: center;         
+    /*background-color: red;*/
 }
 
 .search{
     height: 30%;
-    width: 70%;    
-    float: right;
-    background-color: green;
+    width: 100%;    
+    float: left;
+    /*background-color: green;*/
 }
 
 .tourtable{
@@ -59,9 +71,11 @@ td {
 }
 
 .header{
+    float: left;
     height: 100px;
     width: 100%;
     background-image: url('/tourtoday/images/logo.png');
     background-repeat: no-repeat;
     background-position: 7% 80%;        
+    /*background-color: red;*/
 }
