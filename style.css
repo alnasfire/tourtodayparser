@@ -7,7 +7,7 @@ root {
     width: 20%;
     float: left;
     /*background-color: blue;*/
-    padding-left: 80px;
+    /*padding-left: 55px;*/
 }
 
 .main{}
@@ -15,18 +15,18 @@ root {
 .menu{
     float: right;
     padding-top: 200px;
-    border: transparent;    
+    border: transparent;        
 }
 
 .content{
     height: 50%;
-    width: 100%;
+    width: 100%;    
     min-height: 950px;
     background-image: url('/tourtoday/images/osnova3.png');
     background-repeat: no-repeat;
     background-position: center;          
     /*background-color: yellow;*/     
-    float: left;
+    float: left;    
 }
 
 .underground{
