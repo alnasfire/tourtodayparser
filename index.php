@@ -14,19 +14,19 @@
         </div>-->
         <div class="main">                          
             <div class="content">
-                <div class="leftmenu">
-                    <table class="menu"> 
+                <div class="leftmenu">                    
+                    <table cellpadding="0" cellspacing="0" border="0" class="menu"> 
                         <tr>
-                            <td><a href="index.php"><img src="/tourtoday/images/vk1.png" width="163" height="71"/></a></td>
+                            <td><a href="index.php"><img src="/tourtoday/images/vk1.png" width="162" height="73"/></a></td>
                         </tr>
                         <tr>
-                            <td><a href="tours.php"><img src="/tourtoday/images/vk2.png" width="162" height="50"/></a></td>
+                            <td><a href="tours.php"><img src="/tourtoday/images/vk2.png" width="162" height="51"/></a></td>
                         </tr>
                         <tr>
-                            <td><a href="countries.php"><img src="/tourtoday/images/vk3.png" width="162" height="50"/></a></td>
+                            <td><a href="countries.php"><img src="/tourtoday/images/vk3.png" width="162" height="51"/></a></td>
                         </tr>
                         <tr>
-                            <td><a href="firms.php"><img src="/tourtoday/images/vk4.png" width="162" height="50"/></a></td>
+                            <td><a href="firms.php"><img src="/tourtoday/images/vk4.png" width="162" height="53"/></a></td>
                         </tr>
                         <tr>
                             <td><a href="visas.php"><img src="/tourtoday/images/vk5.png" width="162" height="50"/></a></td>
@@ -58,8 +58,5 @@
             </div>
             <div class="underground"></div>
         </div>
-        <?php
-
-        ?>
     </body>
 </html>
