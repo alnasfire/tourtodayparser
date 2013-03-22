@@ -1,4 +1,4 @@
-root { 
+root {
     display: block;
 }
 
@@ -6,52 +6,52 @@ root {
     height: 100%;
     width: 20%;
     float: left;
+    padding-left: 50px;
     /*background-color: blue;*/
-    /*padding-left: 55px;*/
 }
 
 .main{}
 
 .menu{
     float: right;
-    padding-top: 200px; 
+    padding-top: 200px;
 }
 
 .content{
     height: 50%;
-    width: 100%;    
+    width: 100%;
     min-height: 950px;
     background-image: url('/tourtoday/images/osnova3.png');
     background-repeat: no-repeat;
-    background-position: center;          
-    /*background-color: yellow;*/     
-    float: left;    
+    background-position: center;
+    /*background-color: yellow;*/
+    float: left;
 }
 
 .underground{
     height: 20%;
-    width: 100%;    
+    width: 100%;
     float: left;
     background-image: url('/tourtoday/images/podval.png');
     background-repeat: no-repeat;
-    background-position: center;         
+    background-position: center;
     /*background-color: red;*/
 }
 
 .search{
     height: 30%;
-    width: 100%;    
+    width: 100%;
     float: left;
     /*background-color: green;*/
 }
 
 .tourtable{
-    width: 500px;    
+    width: 500px;
     position: static;
     padding: 0;
     border: 4px double black;
-    font: small cursive;     
-    margin-top: 100px; 
+    font: small cursive;
+    margin-top: 100px;
 }
 
 .menu tr{
@@ -69,7 +69,7 @@ root {
      background-image: url('/tourtoday/images/fon3.jpg');
      background-repeat: no-repeat;
      background-position: center;
-     background-size: cover;         
+     background-size: cover;
 }
 
 .header{
@@ -78,6 +78,6 @@ root {
     width: 100%;
     background-image: url('/tourtoday/images/logo.png');
     background-repeat: no-repeat;
-    background-position: 7% 80%;        
+    background-position: 7% 80%;
     /*background-color: red;*/
 }

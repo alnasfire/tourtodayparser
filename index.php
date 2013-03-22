@@ -1,21 +1,21 @@
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="style.css" /> 
+        <link type="text/css" rel="stylesheet" href="style.css" />
         <title>Tour Today! Hot tours to many resorts!</title>
     </head>
     <body class="body">
         <div class="header">
         </div>
-<!--        <div class="search"> 
-            <form>
-                <input type="text"/>
-                <button>search</button>
-            </form>                
-        </div>-->
-        <div class="main">                          
+        <!-- <div class="search">
+                    <form>
+                        <input type="text"/>
+                        <button>search</button>
+                    </form>
+                </div>-->
+        <div class="main">
             <div class="content">
-                <div class="leftmenu">                    
-                    <table cellpadding="0" cellspacing="0" border="0" class="menu"> 
+                <div class="leftmenu">
+                    <table class="menu">
                         <tr>
                             <td><a href="index.php"><img src="/tourtoday/images/vk1.png" width="162" height="73"/></a></td>
                         </tr>
@@ -39,7 +39,7 @@
                         </tr>
                     </table>
                 </div>
-<!--                <table class="tourtable" align="center">
+            <!-- <table class="tourtable" align="center">
                     <tr class="tourtabletr">
                        <td class="tourtabletd" name="country">country</td>
                        <td class="tourtabletd" name="city">city</td>
@@ -51,10 +51,9 @@
                        <td class="tourtabletd" name="price">price</td>
                        <td class="tourtabletd" name="date">date</td>
                    </tr>
-                   <?php
-
-                   ?>
-                </table>            -->
+                <?php
+                ?>
+            </table> -->
             </div>
             <div class="underground"></div>
         </div>
