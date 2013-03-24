@@ -7,12 +7,11 @@ root {
     width: 20%;
     float: left;
     padding-left: 50px;
-    /*background-color: blue;*/
 }
 
 .menu{
     float: right;
-    padding-top: 200px;
+    padding-top: 200px;    
 }
 
 .content{
@@ -22,7 +21,6 @@ root {
     background-image: url('/tourtoday/images/osnova3.png');
     background-repeat: no-repeat;
     background-position: center;
-    /*background-color: yellow;*/
     float: left;
 }
 
@@ -33,14 +31,12 @@ root {
     background-image: url('/tourtoday/images/podval.png');
     background-repeat: no-repeat;
     background-position: center;
-    /*background-color: red;*/
 }
 
 .search{
     height: 30%;
     width: 100%;
     float: left;
-    /*background-color: green;*/
 }
 
 .tourtable{  
@@ -50,11 +46,6 @@ root {
     width: 600px;        
     margin-top: 150px;
     margin-left: 20px;
-}
-
-.tours{
-    border: 4px double black;
-    font: small cursive;
 }
 
 .body{
@@ -71,10 +62,4 @@ root {
     background-image: url('/tourtoday/images/logo.png');
     background-repeat: no-repeat;
     background-position: 7% 80%;
-    /*background-color: red;*/
-}
-
-TD, TH {
-    padding: 5px; /* Поля вокруг текста */
-    border: 1px solid black; /* Рамка вокруг ячеек */
 }
