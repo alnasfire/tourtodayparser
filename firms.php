@@ -6,6 +6,12 @@
     <body class="body">
         <div class="header">
         </div>
+        <!-- <div class="search">
+                    <form>
+                        <input type="text"/>
+                        <button>search</button>
+                    </form>
+                </div>-->
         <div class="main">
             <div class="content">
                 <div class="leftmenu">

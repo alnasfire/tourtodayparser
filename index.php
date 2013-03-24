@@ -39,21 +39,30 @@
                         </tr>
                     </table>
                 </div>
-            <!-- <table class="tourtable" align="center">
-                    <tr class="tourtabletr">
-                       <td class="tourtabletd" name="country">country</td>
-                       <td class="tourtabletd" name="city">city</td>
-                       <td class="tourtabletd" name="departure city">departure city</td>
-                       <td class="tourtabletd" name="duration">duration</td>
-                       <td class="tourtabletd" name="firm name">firm name</td>
-                       <td class="tourtabletd" name="hotel">hotel</td>
-                       <td class="tourtabletd" name="phones">phones</td>
-                       <td class="tourtabletd" name="price">price</td>
-                       <td class="tourtabletd" name="date">date</td>
-                   </tr>
-                <?php
-                ?>
-            </table> -->
+                <table class="tourtable">
+                    <?php
+                    include "config.php";
+                    $tr = mysql_query("select * from tours;");
+                    if ($tr) {
+                        // Определяем таблицу и заголовок
+                        echo "<tr><td>country</td><td>hotel</td><td>phones</td>
+                            <td>price</td><td>date start</td></tr>";
+                        // Так как запрос возвращает несколько строк, применяем цикл
+                        while ($tour = mysql_fetch_array($tr)) {
+                            echo "<tr>
+                                <td>" . $tour['country'] . "&nbsp;</td>                                                                
+                                <td>" . $tour['hotel'] . "&nbsp;</td>
+                                <td>" . $tour['phones'] . "&nbsp;</td>
+                                <td>" . $tour['price'] . "&nbsp;</td>
+                                <td>" . $tour['datestart'] . "&nbsp;</td>
+                            </tr>";
+                        }
+                    } else {
+                        echo "<p><b>Error: " . mysql_error() . "</b><p>";
+                        exit();
+                    }
+                    ?>
+                </table> 
             </div>
             <div class="underground"></div>
         </div>
