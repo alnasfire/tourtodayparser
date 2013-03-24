@@ -10,8 +10,6 @@ root {
     /*background-color: blue;*/
 }
 
-.main{}
-
 .menu{
     float: right;
     padding-top: 200px;
@@ -19,7 +17,7 @@ root {
 
 .content{
     height: 50%;
-    width: 100%;
+    width: 100%;    
     min-height: 950px;
     background-image: url('/tourtoday/images/osnova3.png');
     background-repeat: no-repeat;
@@ -45,14 +43,18 @@ root {
     /*background-color: green;*/
 }
 
-.tourtable{
-    
+.tourtable{  
+    overflow-y: scroll;
+    max-height: 650px;
     float: left;    
-    width: 600px;    
-    border: 4px double black;
-    font: small cursive;
+    width: 600px;        
     margin-top: 150px;
     margin-left: 20px;
+}
+
+.tours{
+    border: 4px double black;
+    font: small cursive;
 }
 
 .body{
@@ -70,4 +72,9 @@ root {
     background-repeat: no-repeat;
     background-position: 7% 80%;
     /*background-color: red;*/
+}
+
+TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+    border: 1px solid black; /* Рамка вокруг ячеек */
 }

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="style.css" />
         <title>Tour Today! Hot tours to many resorts!</title>
     </head>
@@ -38,34 +39,7 @@
                             <td><a href="about.php"><img src="/tourtoday/images/vk7.png" width="162" height="50"/></a></td>
                         </tr>
                     </table>
-                </div>
-                <table class="tourtable">
-                    <?php
-                    include "config.php";
-                    $tr = mysql_query("select * from tours;");
-                    if ($tr) {
-                        // Определяем таблицу и заголовок
-                        echo "<tr><td>country</td><td>city</td><td>departure</td>
-                            <td>duration</td><td>firm</td><td>hotel</td><td>phones</td>
-                            <td>price</td><td>date start</td></tr>";
-                        // Так как запрос возвращает несколько строк, применяем цикл
-                        while ($tour = mysql_fetch_array($tr)) {
-                            echo "<tr><td>" . $tour['country'] . "&nbsp;</td><td>" . $tour['city'] . "
-                            &nbsp </td><td>" . $tour['departure'] . "&nbsp;</td>
-                                <td>" . $tour['duration'] . "&nbsp;</td>
-                                <td>" . $tour['firm'] . "&nbsp;</td>
-                                <td>" . $tour['hotel'] . "&nbsp;</td>
-                                <td>" . $tour['phones'] . "&nbsp;</td>
-                                <td>" . $tour['price'] . "&nbsp;</td>
-                                <td>" . $tour['datestart'] . "&nbsp;</td>
-                            </tr>";
-                        }
-                    } else {
-                        echo "<p><b>Error: " . mysql_error() . "</b><p>";
-                        exit();
-                    }
-                    ?>
-                </table> 
+                </div>                
             </div>
             <div class="underground"></div>
         </div>

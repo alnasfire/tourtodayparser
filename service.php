@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="style.css" />
         <title>Tour Today! Hot tours to many resorts!</title>
     </head>

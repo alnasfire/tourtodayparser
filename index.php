@@ -1,5 +1,7 @@
 <html>
     <head>
+        <!--<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-5"/>-->	
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>	
         <link type="text/css" rel="stylesheet" href="style.css" />
         <title>Tour Today! Hot tours to many resorts!</title>
     </head>
@@ -39,30 +41,33 @@
                         </tr>
                     </table>
                 </div>
-                <table class="tourtable">
-                    <?php
-                    include "config.php";
-                    $tr = mysql_query("select * from tours;");
-                    if ($tr) {
-                        // Определяем таблицу и заголовок
-                        echo "<tr><td>country</td><td>hotel</td><td>phones</td>
+                <div class="tourtable">
+                    <table class="tours">
+                        <?php 
+                        include "config.php";
+                        $tr = mysql_query("select * from tours;");
+                        if ($tr) {
+                            // Определяем таблицу и заголовок
+                            echo "<tr><td>country</td><td>hotel</td><td>phones</td>
                             <td>price</td><td>date start</td></tr>";
-                        // Так как запрос возвращает несколько строк, применяем цикл
-                        while ($tour = mysql_fetch_array($tr)) {
-                            echo "<tr>
-                                <td>" . $tour['country'] . "&nbsp;</td>                                                                
-                                <td>" . $tour['hotel'] . "&nbsp;</td>
-                                <td>" . $tour['phones'] . "&nbsp;</td>
-                                <td>" . $tour['price'] . "&nbsp;</td>
-                                <td>" . $tour['datestart'] . "&nbsp;</td>
-                            </tr>";
+                            // Так как запрос возвращает несколько строк, применяем цикл
+                   
+                            while ($tour = mysql_fetch_array($tr)) {
+                                echo "<tr>
+                                    <td>" . $tour['country'] . "&nbsp;</td>                                                                
+                                    <td>" . $tour['hotel'] . "&nbsp;</td>
+                                    <td>" . $tour['phones'] . "&nbsp;</td>
+                                    <td>" . $tour['price'] . "&nbsp;</td>
+                                    <td>" . $tour['datestart'] . "&nbsp;</td>
+                                </tr>";                            
+                            }
+                        } else {
+                            echo "<p><b>Error: " . mysql_error() . "</b><p>";
+                            exit();
                         }
-                    } else {
-                        echo "<p><b>Error: " . mysql_error() . "</b><p>";
-                        exit();
-                    }
-                    ?>
-                </table> 
+                        ?>
+                    </table> 
+                </div>
             </div>
             <div class="underground"></div>
         </div>
