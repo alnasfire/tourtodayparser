@@ -15,7 +15,7 @@ root {
 }
 
 .content{
-    height: 50%;
+    height: 50%;    
     width: 100%;    
     min-height: 950px;
     background-image: url('/tourtoday/images/osnova3.png');
@@ -33,15 +33,9 @@ root {
     background-position: center;
 }
 
-.search{
-    height: 30%;
-    width: 100%;
-    float: left;
-}
-
 .tourtable{  
-    overflow-y: scroll;
     max-height: 650px;
+    overflow-y: scroll;
     float: left;    
     width: 600px;        
     margin-top: 150px;

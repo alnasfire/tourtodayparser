@@ -17,7 +17,7 @@
         <div class="main">
             <div class="content">
                 <div class="leftmenu">
-                    <table class="menu">                        
+                    <table class="menu">
                         <tr>
                             <td><a href="index.php"><img src="/tourtoday/images/vk1.png" width="162" height="73"/></a></td>
                         </tr>
@@ -42,23 +42,23 @@
                     </table>
                 </div>
                 <div class="tourtable">
-                    <table border="1">                        
+                    <table border="1">
                         <?php
                         include "config.php";
                         $tr = mysql_query("select * from tours;");
                         if ($tr) {
                             // Определяем таблицу и заголовок
                             echo "<tr><td>country</td><td>hotel</td><td>phones</td>
-                            <td>price</td><td>date start</td></tr>";
+                                <td>price</td><td>date start</td></tr>";
                             // Так как запрос возвращает несколько строк, применяем цикл
 
                             while ($tour = mysql_fetch_array($tr)) {
                                 echo "<tr>
-                                    <td>" . $tour['country'] . "&nbsp;</td>                                                                
-                                    <td>" . $tour['hotel'] . "&nbsp;</td>
-                                    <td>" . $tour['phones'] . "&nbsp;</td>
-                                    <td>" . $tour['price'] . "&nbsp;</td>
-                                    <td>" . $tour['datestart'] . "&nbsp;</td>
+                                <td>" . $tour['country'] . "&nbsp;</td>
+                                <td>" . $tour['hotel'] . "&nbsp;</td>
+                                <td>" . $tour['phones'] . "&nbsp;</td>
+                                <td>" . $tour['price'] . "&nbsp;</td>
+                                <td>" . $tour['datestart'] . "&nbsp;</td>
                                 </tr>";
                             }
                         } else {
@@ -66,7 +66,7 @@
                             exit();
                         }
                         ?>
-                    </table> 
+                    </table>
                 </div>
             </div>
             <div class="underground"></div>
